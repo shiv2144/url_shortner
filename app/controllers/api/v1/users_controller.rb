@@ -23,10 +23,9 @@ module API
         @user = User.new(user_params)
         if @user.save
           log_in @user
-          respond_to do |format|
-            format.json { render json: @user_url, status: 200 }
-            format.xml { render xml: @user_url, status: 200 }
-          end
+          render :create, status: 200, location: @user
+        else
+          render json: @user.errors, status: :unprocessable_entity
         end
       end
       

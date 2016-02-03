@@ -1,2 +1,73 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div style="margin:0 auto; width:1024px;">
+<div class='alert alert-info fade in' data-alert='alert'>
+  <h3>
+    <strong>
+      API Client Simulator
+    </strong>
+  </h3>
+  <p>1</p>
+  <p>2</p>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6" id="signup">
+  <div class="panel panel-info">
+    <div class="panel-heading">Signup</div>
+    <div class="panel-body">
+      <form class="form-inline" role="form" onsubmit="return false;">
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputEmail2">Name</label>
+			    <input type="text" name="name" class="form-control" placeholder="Name">
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+			    <input type="email" name="email" class="form-control" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputPassword2">Password</label>
+			    <input type="password" name="password" class="form-control" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputPassword2">Confirm Password</label>
+			    <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password">
+			  </div>
+			  <button type="submit" name="submit" class="btn btn-default">Signup</button>
+			</form>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-md-6" id="login">
+  <div class="panel panel-info">
+    <div class="panel-heading">Login and get API Token</div>
+    <div class="panel-body">
+      <form class="form-inline" role="form">
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+			    <input type="email" class="form-control" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputPassword2">Password</label>
+			    <input type="password" class="form-control" placeholder="Password">
+			  </div>
+			  <button type="submit" class="btn btn-default">Login</button>
+			</form>
+			<div class="form-group">
+			  <label class="sr-only" for="exampleInputPassword2">Api Token</label>
+			  <input type="text" class="form-control" placeholder="API Token">
+			</div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+
+<div class="row">
+<p>Error------</p>
+<div id="error"></div>
+<p>Response---</p>
+<div id="response"></div>
+</div>
+</div>
