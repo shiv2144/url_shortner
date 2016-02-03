@@ -1,0 +1,14 @@
+shivadmin:
+  name: Shiv Admin
+  email: shivadmin@test.com
+  password_digest: <%= User.digest('123456') %>
+  admin: true
+
+<% 30.times do |n| %>
+shiv<%= n %>:
+  name:  <%= "shiv#{n}" %>
+  email: <%= "shiv#{n}@test.com" %>
+  password_digest: <%= User.digest('123456') %>
+<% end %>
+  
+  
